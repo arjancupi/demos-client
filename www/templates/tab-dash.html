@@ -1,0 +1,63 @@
+<ion-view hide-back-button="true">
+  <ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <ion-tab icon="ion-star" ui-sref="tab.dash.popular">
+      <ion-nav-view name="popular"></ion-nav-view>
+    </ion-tab>
+    <ion-tab icon="ion-android-time" ui-sref="tab.dash.recent">
+      <ion-nav-view name="recent"></ion-nav-view>
+    </ion-tab>
+  </ion-tabs>
+</ion-view>
+<!-- <ion-view view-title="Newsfeed">
+  <ion-pane>
+    <ion-tabs class="tabs-top">
+      <ion-tab scroll-sista="header-tabs-subheader" title="Populaires" href="#/tab/tab1">
+        <ion-nav-view animation="slide-left-right" name="tab-tab1">
+          <ion-content class="padding">
+            <div class="list card" ng-repeat="survey in surveys">
+              <div class="item item-body">
+                <h2 class="pull-left">{{::survey.question}}</h2>
+                <button class="button pull-right icon ion-ios-plus-outline"></button>
+                <div class="row no-padding">
+                  <ul class="align-right" id="tags">
+                    <li ng-repeat="tag in survey.tags">
+                      <p><a href="#">#{{::tag.text}}</a></p>
+                    </li>
+                  </ul>
+                </div>
+                <img class="full-image" src="http://loremflickr.com/120/40">
+                <div class="row">
+                  <div class="col-25">
+                    <i class="icon ion-person"></i> {{::survey.usersCount}}</div>
+                  <div class="col-25"> <a href="#" class="subdued">{{::survey.comments.length}} <i class="icon ion-chatbubbles"></i></a></div>
+                  <div class="col-50">
+                    <rating class="" ng-model="survey.rating.rate" readonly="readOnly" max="survey.rating.max"></rating>
+                  </div>
+                </div>
+                <p>{{::survey.description}}</p>
+              </div>
+              <div class="item item-avatar">
+                <img src="http://loremflickr.com/120/40">
+                <h2 class="pull-left">{{::survey.user.name}}</h2>
+                <div class="row no-padding">
+                  <p class="">{{::survey.dateText}}</p>
+                </div>
+              </div>
+              <div class="button-bar">
+                <button class="button button-positive">Répondre</button>
+              </div>
+            </div>
+          </ion-content>
+        </ion-nav-view>
+      </ion-tab>
+      <ion-tab title="Récents" href="#/tab/tab2">
+        <ion-nav-view name="tab-tab2" animation="slide-left-right">
+          <ion-content>
+            Tab 2 content
+          </ion-content>
+        </ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+  </ion-pane>
+</ion-view>
+ -->

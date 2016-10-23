@@ -1,0 +1,9 @@
+ul.rating li {
+  display: inline;
+  border: 0px;
+  background: none;
+  padding: 5px 5px;
+}
+ul.rating li i {
+  font-size: 18px;
+}
